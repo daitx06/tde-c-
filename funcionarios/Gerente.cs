@@ -7,7 +7,7 @@ public class Gerente : Funcionario
         Bonus = bonus;
     }
 
-    public virtual double CalcularSalario(){
+    public override double CalcularSalario(){
         return base.CalcularSalario() + Bonus;
     }
 }
